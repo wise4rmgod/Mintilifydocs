@@ -63,15 +63,18 @@
         "thebasics/authentication",
         {
           "group": "Sign up as a Business",
-          "pages": ["Interswitch Business", "Identity Verification"]
+          "pages": [
+            "thebasics/interswitchBusiness",
+            "thebasics/identityverification"
+          ]
         },
-        "Sign up as a developer",
-        "Go live with Interswitch APIs"
+        "Signupasadeveloper",
+        "GolivewithinterswitchaPIs"
       ]
     },
     {
       "group": "Select an API",
-      "pages": [""]
+      "pages": ["AcceptPayments"]
     },
     {
       "group": "Essentials",
@@ -105,21 +108,5 @@
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
-  },
-  "anchors": [
-    {
-      "name": "API Reference V1",
-      "url": "v1/api-reference",
-      "version": "v1"
-    },
-    {
-      "name": "API Reference V2",
-      "url": "v2/api-reference",
-      "version": "v2"
-    },
-    {
-      "name": "Anchor Without a Version",
-      "url": "example-anchor"
-    }
-  ]
+  }
 }
