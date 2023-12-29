@@ -1,0 +1,30 @@
+---
+title: Authentication
+description: "This tutorial will teach you how to create a vehicle using the vehicle.js sdk"
+---
+
+We have two ways by which we secure our APIs at Interswitch:
+
+1. **OAuth 2.0:** Here, you will be making a call to our system in order to get an access token which must be attached to the header of your request. This will authenticate that you are permitted to use the service. More details can be found below.
+
+2. **Interswitch Auth:** This is for our existing legacy application users where you need to generate certain parameters such as nonce, signature, timestamp and signature method. All these parameters are to be attached to the header of every request. It is explained in detail below.
+
+## OAuth 2.0
+
+Our Services are protected by systems that require you having an access token that has been granted by our authentication service. You can only access services which have been granted you or your client using the access token.
+
+How do I get my Access Token ?
+The steps are:
+
+1. Make an API call to get your access token
+
+```cURL
+curl https://sandbox.interswitchng.com/passport/oauth/token \
+-H "Authorization: Basic Base64(CLIENT_ID:SECRET_KEY)" \
+-H "Content-Type: application/x-www-form-urlencoded" \
+-D '{
+"grant_type": "client_credentials"
+}'
+-X POST
+
+```

@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Vehicle Doc",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -54,11 +54,38 @@
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction", "quickstart", "development", "tutorial"]
+    },
+    {
+      "group": "The Basics",
+      "pages": [
+        "thebasics/security",
+        "thebasics/authentication",
+        {
+          "group": "Sign up as a Business",
+          "pages": ["Interswitch Business", "Identity Verification"]
+        },
+        "Sign up as a developer",
+        "Go live with Interswitch APIs"
+      ]
+    },
+    {
+      "group": "Select an API",
+      "pages": [""]
     },
     {
       "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "pages": [
+        "essentials/markdown",
+        "essentials/code",
+        "essentials/images",
+        "essentials/settings",
+        "essentials/navigation"
+      ]
+    },
+    {
+      "group": "API Documentation",
+      "pages": ["api-reference/authentication"]
     },
     {
       "group": "API Documentation",
@@ -78,5 +105,21 @@
     "twitter": "https://twitter.com/mintlify",
     "github": "https://github.com/mintlify",
     "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  },
+  "anchors": [
+    {
+      "name": "API Reference V1",
+      "url": "v1/api-reference",
+      "version": "v1"
+    },
+    {
+      "name": "API Reference V2",
+      "url": "v2/api-reference",
+      "version": "v2"
+    },
+    {
+      "name": "Anchor Without a Version",
+      "url": "example-anchor"
+    }
+  ]
 }
